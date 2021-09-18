@@ -4,8 +4,6 @@ import csv
 csv_file = 'Cities.csv'
 header = ['Sl no', 'City', 'region',
           'latitude(lat)', 'longitude(lon)', 'temperature in deg(temp_c)', 'wind_kph', 'wind_direction']
-# APIKEY = f'c005e90249e54c2e921141433211709'
-# URL = f'https://api.weatherapi.com/v1/current.json?key={APIKEY}&q={cityname}&aqi=no'
 df = pd.read_csv(csv_file)
 dic = dict()
 for i in range(len(df)):
